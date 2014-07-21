@@ -1,3 +1,11 @@
+# Functions that cache the inverse of a matrix
+# 
+# Usage:
+#   matrix <- matrix(c(3,1,2,1),nrow=2,ncol=2)
+#   chachedMatrix <- makeCacheMatrix(matrix) ## Create the cacheable object
+#   
+#   cacheSolve(chachedMatrix) ## Calculates the inverse in the first execuption
+#   cacheSolve(chachedMatrix) ## Following executions wil just return the cached value
 
 ## This function creates a special "matrix" object that can cache its inverse.
 ##
